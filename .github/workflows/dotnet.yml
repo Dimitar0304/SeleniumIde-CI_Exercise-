@@ -19,13 +19,11 @@ jobs:
         run: |
          sudo apt-get update
          sudo apt-get install -y google-chrome-stable
-      - name: Set executable permissions for Selenium Manager
-        run: chmod +x /home/runner/work/SeleniumIde-CI_Exercise-/SeleniumIde-CI_Exercise-/SeleniumIDE/bin/Debug/net6.0/selenium-manager/linux/selenium-manager
       - name: Install dependencies
         run: dotnet restore
       - name: Build the Solution
         run: dotnet build --no-restore
       - name: Run Tests
         env: 
-          CHROMEWEBDRIVER: /usr/bin/google-chrome
+          CHROMEWEBDRIVER: C:\Program Files\Google\Chrome\Application\chrome.exe
         run: dotnet test --verbosity normal
