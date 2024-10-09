@@ -14,8 +14,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,14 +32,10 @@
               "RelativeDocumentMoniker": "SeleniumIDE\\TC01IfUserIsInvalidTryAgainTest1.cs",
               "ToolTip": "C:\\Users\\lasss\\Desktop\\2-SeleniumIDE\\SeleniumIDE\\TC01IfUserIsInvalidTryAgainTest1.cs",
               "RelativeToolTip": "SeleniumIDE\\TC01IfUserIsInvalidTryAgainTest1.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:03:26.73Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
