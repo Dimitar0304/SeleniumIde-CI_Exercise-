@@ -25,4 +25,6 @@ jobs:
       - name: Build the Solution
         run: dotnet build --no-restore
       - name: Run Tests
+        env:
+          CHROMEWEBDRIVER: C:\ProgramData\Microsoft\Windows\Start Menu\Programs
         run: dotnet test --verbosity normal
