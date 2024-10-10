@@ -28,7 +28,7 @@ public class TC01IfUserIsInvalidTryAgainTest
         chromeOptions.AddArguments("disable-gpu");
         chromeOptions.AddArguments("window-size=1920x1080");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(chromeOptions);
         js = (IJavaScriptExecutor)driver;
         vars = new Dictionary<string, object>();
     }
