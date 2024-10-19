@@ -11,20 +11,6 @@ pipeline {
 
     stages {
         
-
-        stage('Set up .NET Core') {
-            steps {
-                script {
-                    
-                    sh 'sudo apt-get update'
-                    sh 'sudo apt-get install -y apt-transport-https'
-                    sh 'wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
-                    sh 'sudo dpkg -i packages-microsoft-prod.deb'
-                    sh 'sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0'
-                }
-            }
-        }
-
         stage('Install Chrome') {
             steps {
                 sh '''
