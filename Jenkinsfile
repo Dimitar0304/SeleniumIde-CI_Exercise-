@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'ubuntu'
-    }
+    agent any
     
     triggers {
         pollSCM('H/5 * * * *')  //this make build every 5 mins
