@@ -13,7 +13,7 @@ pipeline {
         
         stage('Install Chrome') {
             steps {
-                sh '''
+                bat '''
                 sudo apt-get update
                 sudo apt-get install -y google-chrome-stable
                 '''
@@ -22,13 +22,13 @@ pipeline {
 
         stage('Install dependencies') {
             steps {
-                sh 'dotnet restore'
+                bat 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'dotnet build --no-restore'
+                bat 'dotnet build --no-restore'
             }
         }
 
@@ -37,7 +37,7 @@ pipeline {
                 CHROMEWEBDRIVER = '/usr/bin/google-chrome'
             }
             steps {
-                sh 'dotnet test'
+                bat 'dotnet test'
             }
         }
     }
